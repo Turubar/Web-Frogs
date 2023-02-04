@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/headerstyle.css">
+    <title>WebFrogs</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg main-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand main-icon" asp-area="" asp-controller="Home" asp-action="Page" href="/Home/Page"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link mytab main-tab" asp-area="" asp-controller="Main" asp-action="Page" href="/Main/Page">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mytab toad-tab" asp-area="" asp-controller="Toad" asp-action="Page" href="/Toad/Page">Жабки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mytab frog-tab" asp-area="" asp-controller="Frog" asp-action="Page" href="/Frog/Page">Лягушки</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="../js/bootstrap.js"></script>
+</body>
+
+</html>

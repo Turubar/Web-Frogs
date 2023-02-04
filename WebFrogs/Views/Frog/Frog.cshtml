@@ -1,0 +1,31 @@
+﻿<style>
+    .main-icon {
+        background-image: url(/images/icon_disabled.png);
+    }
+
+    .frog-tab {
+        color: rgb(133, 172, 108);
+    }
+</style>
+
+
+@model Frog
+
+<div class="container-fluid mt-3 mb-5">
+    <div class="row">
+        <div class="row">
+            <div class="col-12">
+                <p class="tfpage-title">@Model.name</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-7 col-sm-12">
+                <img class="tfpage-img" src="@Model.mainImg" />
+            </div>
+            <div class="col-lg-5 col-sm-12">
+                <p class="tfpage-desc">@Model.shortDesc@Model.fullDesc</p>
+                <p class="tfpage-desc">@Model.fullDesc</p>
+            </div>
+        </div>
+    </div>
+</div>

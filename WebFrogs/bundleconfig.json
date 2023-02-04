@@ -1,0 +1,15 @@
+[
+  {
+    "outputFileName": "wwwroot/css/bundle.css",
+    "inputFiles": [
+      "wwwroot/css/bootstrap.css",
+      "wwwroot/css/cardstyle.css",
+      "wwwroot/css/fontstyle.css",
+      "wwwroot/css/footerstyle.css",
+      "wwwroot/css/headerstyle.css",
+      "wwwroot/css/homestyle.css",
+      "wwwroot/css/mainstyle.css",
+      "wwwroot/css/tfpagestyle.css"
+    ]
+  }
+]

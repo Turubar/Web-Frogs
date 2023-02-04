@@ -1,0 +1,17 @@
+﻿.tf-card {
+    padding-top: 25px;
+}
+
+.tf-title {
+    color: rgb(133, 172, 108);
+    font-size: 30px;
+}
+
+.tf-text {
+    font-size: 18px;
+}
+
+.tf-title:hover {
+    color: #34362b;
+}
+

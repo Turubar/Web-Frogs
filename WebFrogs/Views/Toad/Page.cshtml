@@ -1,0 +1,63 @@
+﻿<style>
+    .main-icon {
+        background-image: url(../images/icon_disabled.png);
+    }
+
+    .toad-tab {
+        color: rgb(133, 172, 108);
+    }
+</style>
+
+@model List<Toad>
+
+@{
+    int countToad = Model.Count();
+}
+
+<div class="container-fluid mb-5">
+    <div class="row">
+        @for (int i = 0; i < countToad;)
+        {
+                @if (i + 1 < countToad)
+                {
+                    <div class="col-lg-4 col-md-6 tf-card">
+                        <div class="card w-100 h-100" style="width: 18rem;">
+                            <img src="@Model[i + 1].mainImg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a asp-area="" asp-controller="Toad" asp-action="Toad" href="/Toad/Toad/@Model[i + 1].id"><h5 class="tf-title toadpage-title">@Model[i + 1].name</h5></a>
+                                <p class="card-text tf-text">@Model[i + 1].shortDesc</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+                @if (i + 2 < countToad)
+                {
+                    <div class="col-lg-4 col-md-6 tf-card">
+                        <div class="card w-100 h-100" style="width: 18rem;">
+                            <img src="@Model[i + 2].mainImg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a asp-area="" asp-controller="Toad" asp-action="Toad" href="/Toad/Toad/@Model[i + 2].id"><h5 class="tf-title toadpage-title">@Model[i + 2].name</h5></a>
+                                <p class="card-text tf-text">@Model[i + 2].shortDesc</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+                @if (i + 3 < countToad)
+                {
+                    <div class="col-lg-4 col-md-6 tf-card">
+                        <div class="card w-100 h-100" style="width: 18rem;">
+                            <img src="@Model[i + 3].mainImg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a asp-area="" asp-controller="Toad" asp-action="Toad" href="/Toad/Toad/@Model[i + 3].id"><h5 class="tf-title toadpage-title">@Model[i + 3].name</h5></a>
+                                <p class="card-text tf-text">@Model[i + 3].shortDesc</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            i = i + 3;
+        }
+    </div>
+</div>

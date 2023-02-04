@@ -1,0 +1,35 @@
+﻿.mainpage-title {
+    color: rgb(133, 172, 108);
+    font-size: 30px;
+}
+
+.mainpage-text {
+    height: 150px;
+    font-size: 20px;
+}
+
+.mainpage-btn {
+    background-color: #34362b;
+    border-width: 0;
+}
+
+.mainpage-btn:hover {
+    color: #34362b;
+    background-color: #f3daa1;
+}
+
+@media(max-width: 1300px) {
+    .mainpage-text {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .mainpage-text {
+        height: auto;
+    }
+
+    .toad-div {
+        margin-top: 25px;
+    }
+}
